@@ -15,3 +15,5 @@ Lunar is a **superset** programming language of Lua 5.1, which means it inherits
   - [Lambda Expressions](/doc/lambda.md)
     - [Concise body](/doc/lambda.md#concise-body)
     - [Block body](/doc/lambda.md#block-body)
+  - [Operators](/doc/operators.md)
+    - [Self-assignment operators](/doc/operators.md#self-assignment-operators)
