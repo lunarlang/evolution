@@ -45,7 +45,7 @@ Methods in a class takes the following syntax, and it can also be prefixed with 
 class C
   function an_instance_method()
     -- there is self here as well
-    print(self.param1)
+    return self.param1
   end
 
   static function a_static_method()
