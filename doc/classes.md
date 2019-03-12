@@ -7,6 +7,24 @@ class C
 end
 ```
 
+## Inheritance
+Classes can easily inherit from another class, given that it has `<< SuperClassName` just after the name of the class, so `class C << S`. The `super()` statement inside of `constructor` passes the arguments of `super` to its super class.
+```lua
+class S
+  constructor(name)
+    self.name = name
+  end
+end
+
+class C << S
+  constructor()
+    super("Bob Wellington") -- calls S's constructor with its arguments
+  end
+end
+
+print(C.new().name) --> "Bob Wellington"
+```
+
 ## Constructors
 When in the context of a class body, declaring a class constructor is easy. The constructor is implicitly given a `self` parameter which is **always** the first parameter of your constructor.
 ```lua

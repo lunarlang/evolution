@@ -9,6 +9,7 @@ Lunar is a **superset** programming language of Lua 5.1, which means it inherits
 
   - [Classes](/doc/classes.md)
     - [Declaration](/doc/classes.md#declaration)
+    - [Inheritance](/doc/classes.md#inheritance)
     - [Constructors](/doc/classes.md#constructors)
     - [Fields](/doc/classes.md#fields)
     - [Methods](/doc/classes.md/#methods)
