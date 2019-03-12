@@ -1,7 +1,7 @@
 # Operators
 
 ## Self-assignment operators
-Lunar adds 6 new operators for self-assignment operators: `..=`, `+=`, `-=`, `*=`, `/=`, and `^=`.
+Lunar adds 7 new operators for self-assignment operators: `..=`, `+=`, `-=`, `*=`, `/=`, `^=`, and `%=`.
 
 These type of self-assignment operators are applicable to the same syntax you use to assign to local (not declaring!) or global variables.
 
