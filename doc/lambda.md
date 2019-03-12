@@ -32,6 +32,8 @@ If you can assign your expression to `local something`, then it is legal to use 
 ## Block body
 **NOTE**: This is currently a candidate for a different syntax: `do |...| code end`.
 
+**NOTE**: You can still use `do end` statement normally, as this is actually completely separate from a `do end` statement.
+
 Block-body lambda expressions are similar to the concise-body variant, with a few key differences.
 
 One difference is: for zero parameters, omit it altogether, and for one or more parameters, add `|param1|` just before the `do` keyword.
