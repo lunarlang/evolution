@@ -50,7 +50,7 @@ account:withdraw(300)
 print(account.balance) --> 450
 ```
 
-Lunar adds 6 new operators: `..=`, `+=`, `-=`, `*=`, `/=`, and `^=`.
+Lunar adds 7 new operators: `..=`, `+=`, `-=`, `*=`, `/=`, `^=`, and `%=`.
 ```lua
 local message = "hello"
 message ..= " world!"
