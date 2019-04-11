@@ -5,6 +5,7 @@ Once the type system comes along, this operator (`?.`, `?:`, `?(`, and `?[`) can
 If the safe-navigation operator was used in an expression, we can simply use the existing expression to our advantage. If it was used as a statement, we will need to rewrite that single statement so that there's an expression to use.
 
 In expressions: rewrite to a PrefixExpression with `x ~= nil and x`
+
 In statements: rewrite to a IfStatement with `x ~- nil`
 
 ```lua
