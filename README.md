@@ -18,6 +18,9 @@ Check out the [code examples](#examples) on the bottom of this readme.
   - [Lambda Expressions](/doc/lambda.md)
     - [Concise body](/doc/lambda.md#concise-body)
     - [Block body](/doc/lambda.md#block-body)
+  - [Import/Export Statements](/doc/import-export.md)
+    - [Importing](/doc/import-export.md#importing)
+    - [Exporting](/doc/import-export.md#exporting)
   - [Operators](/doc/operators.md)
     - [Self-assignment operators](/doc/operators.md#self-assignment-operators)
 
@@ -77,4 +80,25 @@ end
 for i = 1, 100 do
   print(fizz(i))
 end
+```
+
+Additionally, Lunar also wraps around the module system with a new import and export statement. (**NOTE**: `export as` syntax were never implemented)
+```lua
+from "my_project.string_utils" import split
+
+-- this module returns a function, not a table with default export
+-- the same as 'return count_chars' at the end of the module
+export as function count_chars(str, char)
+  local n = 0
+
+  for _, c in pairs(split(str)) do
+    if c == char then
+      n += 1
+    end
+  end
+
+  return n
+end
+
+-- no need to write 'return count_chars' at the end of the module
 ```
